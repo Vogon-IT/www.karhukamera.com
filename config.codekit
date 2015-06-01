@@ -42,6 +42,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/bg-tahtikallio.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 565625,
+		"inputAbbreviatedPath": "\/assets\/img\/bg-tahtikallio.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/bg-tahtikallio.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/bg-ulvila1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 814493,
+		"inputAbbreviatedPath": "\/assets\/img\/bg-ulvila1.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/bg-ulvila1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/js\/app-min.js": {
 		"fileType": 64,
 		"ignore": 1,
