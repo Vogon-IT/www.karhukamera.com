@@ -2829,7 +2829,7 @@ input[type="button"].btn-block {
   font-style: normal;
 }
 body {
-  background: #fff;
+  background: #ffffff;
   font-size: 15px;
   position: relative;
 }
@@ -2859,14 +2859,15 @@ h2 {
 }
 a.btn.btn-default.btn-lg {
   border-radius: 0;
-  background-color: #f7c202;
-  border-color: #f7c202;
-  color: #333333;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #222222;
+  text-transform: uppercase;
 }
 a.btn.btn-default.btn-lg:hover,
 a.btn.btn-default.btn-lg:focus {
-  background-color: #deaf02;
-  border-color: #deaf02;
+  background-color: #222222;
+  color: #ffffff;
 }
 .page {
   padding: 60px 0;
@@ -2883,11 +2884,15 @@ a.btn.btn-default.btn-lg:focus {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  color: #fff;
+  color: #ffffff;
 }
 .page-rmu .container {
   background-color: #546a87;
   background-color: rgba(84, 106, 134, 0.7);
+}
+.page-rmu a.btn.btn-default.btn-lg:hover,
+.page-rmu a.btn.btn-default.btn-lg:focus {
+  background-color: #546a87;
 }
 .page-ulvila1 {
   background-color: #2B6D1E;
@@ -2895,11 +2900,15 @@ a.btn.btn-default.btn-lg:focus {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 70%;
-  color: #fff;
+  color: #ffffff;
 }
 .page-ulvila1 .container {
   background-color: #2B6D1E;
   background-color: rgba(43, 109, 30, 0.7);
+}
+.page-ulvila1 a.btn.btn-default.btn-lg:hover,
+.page-ulvila1 a.btn.btn-default.btn-lg:focus {
+  background-color: #2B6D1E;
 }
 .page-tahtikallio {
   background-color: #6C97B9;
@@ -2907,11 +2916,18 @@ a.btn.btn-default.btn-lg:focus {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  color: #fff;
+  color: #ffffff;
 }
 .page-tahtikallio .container {
   background-color: #6C97B9;
   background-color: rgba(108, 151, 185, 0.7);
+}
+.page-tahtikallio a.btn.btn-default.btn-lg:hover,
+.page-tahtikallio a.btn.btn-default.btn-lg:focus {
+  background-color: #6C97B9;
+}
+.page-footer {
+  padding: 40px 0 30px;
 }
 .page-footer .col-sm-12 {
   text-align: center;
@@ -2919,5 +2935,7 @@ a.btn.btn-default.btn-lg:focus {
 .page-footer .col-sm-12 p {
   margin: 10px auto;
   font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 /* Media Queries */
