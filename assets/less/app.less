@@ -1,5 +1,5 @@
-/* Import Bootstrap */
-@import "bootstrap.less";
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+* { box-sizing: border-box; }
 
 @font-face {
   font-family: 'BebasNeue';
@@ -8,127 +8,118 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @black: #222;
 @white: #FFF;
+@blue: #2F5C93;
+@blue-lighter: #3364A0;
+@blue-light: #478CDF;
+@blue-darker: #274C79;
+@blue-dark: #1B3453;
+@red: #A04B43;
 
 body {
-  background: @white;
   font-size: 15px;
-  position: relative;
-}
-.row {
-  margin: 0;
-}
-.btn-link {
-  text-align: center;
-  margin: 40px auto;
-}
-h1,
-h2 {
-  text-align: center;
-  font-family: 'BebasNeue';
-}
-h1 {
-  font-size: 60px;
-  margin: 40px auto;
-}
-h2 {
-  font-size: 50px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  line-height: 1.3em;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-}
-a.btn.btn-default.btn-lg {
-  border-radius: 0;
-  background-color: @white;
-  border-color: @white;
-  color: @black;
-
-  &:hover,
-  &:focus {
-    background-color: @black;
-    color: @white;
-  }
-}
-.page {
-  padding: 60px 0;
-}
-
-.page-etusivu {
-  display: flex;
-  align-items: center;
+  min-height: 100vh;
+  direction: flex;
   flex-direction: column;
-  justify-content: center;
-}
+  background-color: @blue-lighter;
+  color: #eee;
+  font-family: Lato, Helvetica, Arial;
 
-.page-tahtikallio, .page-rmu, .page-ulvila1 {
-  color: @white;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #fff; 
-
-  background-color: #222;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  .container {
-    padding: 20px 40px;
+  h1, h2 {
     margin: 0;
-    width: inherit;
-    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 2.1rem;
+    color: rgba(255,255,255,1);
+    font-weight: 700;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: .4em;
+  }
+  p {
+    font-size: 1rem;
+    color: rgba(255,255,255,.8);
+    font-weight: 300;
+  }
+  a {
+    color: rgba(255,255,255,.8);
+    &:hover, &:focus, &:active {
+      color: rgba(255,255,255,1);
+    }
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .7rem 1rem;
+    background-color: @red;
+    text-decoration: none;
 
-    a {
-      color: #fff;
-      text-decoration: underline;
-      &:hover {
-        color: #eee;
+    &:focus {
+      box-shadow: inset 0 5px 10px -5px #000;
+    }
+  }
+
+  header, footer {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background-color: @blue-dark;
+    line-height: 1;
+    p {
+      margin: 0;
+      color: rgba(255,255,255,.9);
+    }
+  }
+
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+
+    section {
+      flex: 1 0 25%;
+      min-width: 26rem;
+      background-color: @blue;
+      padding: 2rem;
+      background-size: cover;
+      background-position: 50% 50%;
+
+      p:last-child {
+        text-align: center;
       }
     }
-    a.btn.btn-default.btn-lg {
-      text-decoration: none;
+    section:nth-last-child(2):nth-child(4n) {
+      min-width: 33%;
     }
-    a.btn.btn-default.btn-lg:focus {
-      background-color: #222;
+    section:nth-child(2) {
+      background-color: @blue-darker;
     }
-  }  
-}
-
-.page-rmu {
-  background-image: url('../img/bg-rmu.jpg');
-  background-position: 50% 50%;
-}
-.page-ulvila1 {
-  background-image: url('../img/bg-ulvila1.jpg');
-  background-position: 50% 70%;
-}
-.page-tahtikallio {
-  background-image: url('../img/bg-tahtikallio.jpg');
-  background-position: 50% 100%;
-}
-.page-footer {
-  padding: 40px 0 30px;
-
-  .col-sm-12 {
-    text-align: center;
-
-    p {
-      margin: 10px auto;
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
+    section:nth-child(3n) {
+      width: 33.333%;
+      background-color: @blue-darker;
+    }
+    section:nth-child(5n) {
+      width: 50%;
+      background-color: @blue-darker;
+    }
+    section:nth-child(4n) {
+      width: 66.666%;
+      background-color: @blue-dark;
     }
   }
 }
 
-/* Media Queries */
-@media (min-width:@screen-xs-min) {
-}
-@media (min-width:@screen-sm-min) {
-}
-@media (min-width:@screen-md-min) {
-}
-@media (min-width:@screen-lg-min) {
-}
+// .rmu {
+//   background-image: url('../img/bg-rmu.jpg');
+// }
+// .ulvila1 {
+//   background-image: url('../img/bg-ulvila1.jpg');
+// }
+// .tahtikallio {
+//   background-image: url('../img/bg-tahtikallio.jpg');
+// }
+
+/* https://color.adobe.com/create/color-wheel/?base=2&rule=Shades&selected=2&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.10438175270108042,0.2043217286914362,0.32647058823529407,0.28023209283713485,0.5485394157661981,0.8764705882352941,0.1843137254901961,0.3607843137254902,0.5764705882352941,0.20030012004801923,0.39207683073221544,0.6264705882352941,0.15234093637454982,0.2981992797118258,0.4764705882352941&swatchOrder=0,1,2,3,4 */
