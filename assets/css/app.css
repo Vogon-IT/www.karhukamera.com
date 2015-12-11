@@ -209,7 +209,6 @@ body h2 {
 body p {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
-  font-weight: 300;
 }
 body a {
   color: rgba(255, 255, 255, 0.8);
@@ -260,10 +259,9 @@ body article {
 }
 body article section {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 25%;
-      -ms-flex: 1 0 25%;
-          flex: 1 0 25%;
-  min-width: 50vw;
+  -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
   background-color: #2F5C93;
   padding: 2rem;
   background-size: cover;
