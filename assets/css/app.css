@@ -299,5 +299,37 @@ body article section:nth-child(4n) {
             flex: 1 1 100%;
   }
 }
+.ulvila1 {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-ulvila1.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-ulvila1.jpg');
+}
+.ulvila2 {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-ulvila2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-ulvila2.jpg');
+}
+.rmu {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-rmu.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-rmu.jpg');
+}
+.nicole {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-nicole.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-nicole.jpg');
+}
+.winona {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-winona.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-winona.jpg');
+}
+.muu {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../img/bg-muu.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../img/bg-muu.jpg');
+}
+.tahtikallio {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-tahtikallio.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../img/bg-tahtikallio.jpg');
+}
+.taini {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url('../img/bg-taini.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url('../img/bg-taini.jpg');
+}
 /* https://color.adobe.com/create/color-wheel/?base=2&rule=Shades&selected=2&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.10438175270108042,0.2043217286914362,0.32647058823529407,0.28023209283713485,0.5485394157661981,0.8764705882352941,0.1843137254901961,0.3607843137254902,0.5764705882352941,0.20030012004801923,0.39207683073221544,0.6264705882352941,0.15234093637454982,0.2981992797118258,0.4764705882352941&swatchOrder=0,1,2,3,4 */
 /*# sourceMappingURL=app.css.map */
